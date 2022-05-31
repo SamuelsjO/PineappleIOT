@@ -117,7 +117,7 @@ void callback(char* topic, byte* dados_tcp, unsigned int length) {
     
     digitalWrite(LED3, HIGH);
     
-  /*}else if((char)dados_tcp[0] == 'D' && (char)dados_tcp[1] == '3'){
+  }else if((char)dados_tcp[0] == 'D' && (char)dados_tcp[1] == '3'){
     digitalWrite(LED3, LOW);
     
   }else if((char)dados_tcp[0] == 'D' && (char)dados_tcp[1] == '4'){
@@ -141,7 +141,7 @@ void callback(char* topic, byte* dados_tcp, unsigned int length) {
     digitalWrite(GREEN, HIGH);
     digitalWrite(RED, LOW);
     delay(100);
-    }*/
+    }
 } 
 
 void loop() {        
